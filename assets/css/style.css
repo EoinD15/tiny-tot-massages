@@ -8,7 +8,7 @@
 
 body {
     font-family:'Comfortaa', 'Open Sans','Roboto';
-    color: #3a3a3a;
+    color:#3a3a3a;
     font-weight: 300rem;
 }
 
@@ -16,20 +16,41 @@ h1, h2 {
     font-family: 'Comfortaa';
     text-transform: uppercase;
     letter-spacing: .5rem;
-    color: black;
+    color: #3a3a3a;
 }
 
 #logo {
     float: left;
     font-size: 4rem;
+    color: #A13376;
+    font-weight: 6rem;
+    margin-left: 1rem;
 }
 
-#links {
+.links {
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
-#links li {
+#logo, .links {
+    line-height: 10vh;
+}
+
+.links li {
     list-style-type: none;
     float: right;
     margin-right: 3rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+.links a:hover {
+        border-bottom: 1px solid;
+}
+
+#active {
+    color: rgb(4,169,160);
 }
