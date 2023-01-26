@@ -54,3 +54,22 @@ h1, h2 {
 #active {
     color: rgb(4,169,160);
 }
+
+/* welcome image */
+
+#hero-outer {
+    height: 10vh;
+    width: 100vw;
+    float: left;
+}
+#hero-image {
+    height: 90vh;
+    width: 100vw;
+    background: url('../images/happy-baby.jpeg') no-repeat;
+    float: left;
+}
+
+
+.intro {
+    text-align: center;
+}
