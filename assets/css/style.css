@@ -21,14 +21,14 @@ h1, h2 {
 
 #logo {
     float: left;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #A13376;
     font-weight: 6rem;
     margin-left: 1rem;
 }
 
 .links {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 1rem;
 }
 
@@ -58,18 +58,31 @@ h1, h2 {
 /* welcome image */
 
 #hero-outer {
-    height: 10vh;
+    height: 1vh;
     width: 100vw;
-    float: left;
+    overflow: hidden;
 }
+
 #hero-image {
-    height: 90vh;
+    height: 60vh;
     width: 100vw;
-    background: url('../images/happy-baby.jpeg') no-repeat;
-    float: left;
+    background: url('../images/background-image.jpg') no-repeat center center;
 }
 
+.benefits {
+    padding-top: 3vh;
+    margin-left: 2rem;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+    column-rule: 1px solid lightblue;
+    column-width: 100px;
+}
 
-.intro {
-    text-align: center;
+.benefits h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    color: rgb(4,169,160);
 }
