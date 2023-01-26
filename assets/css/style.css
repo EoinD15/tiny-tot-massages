@@ -9,6 +9,7 @@
 body {
     font-family:'Comfortaa', 'Open Sans','Roboto';
     color: #3a3a3a;
+    font-weight: 300rem;
 }
 
 h1, h2 {
@@ -16,4 +17,19 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: .5rem;
     color: black;
+}
+
+#logo {
+    float: left;
+    font-size: 4rem;
+}
+
+#links {
+    font-size: 2rem;
+}
+
+#links li {
+    list-style-type: none;
+    float: right;
+    margin-right: 3rem;
 }
