@@ -106,3 +106,31 @@ footer {
     padding: 5%;
     color: #3a3a3a
 }
+
+
+#classes {
+    background-image: url('../images/happy-baby.jpeg');
+    background-repeat: no-repeat;
+    float: left;
+    height: 60vh;
+    width: 100%;
+    text-align: right;
+  }
+
+  table {
+    float: right;
+    border: 1px solid;
+    font-size: 2rem;
+    margin-top: 10vh;
+    margin-left: 40vw;
+    margin-right: 20vw;
+  }
+
+  table h1 {
+    float: right;
+    margin-top: 20%;
+  }
+
+  table, th, td {
+        border: 1px solid;
+  }
