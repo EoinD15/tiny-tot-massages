@@ -16,7 +16,7 @@ h1, h2 {
     font-family: 'Comfortaa';
     text-transform: uppercase;
     letter-spacing: .5rem;
-    color: #3a3a3a;
+    color: rgb(4,169,160);
 }
 
 #logo {
@@ -107,16 +107,46 @@ footer {
     color: #3a3a3a
 }
 
+    .row {
+        display: flex;
+        float: left;
+        padding-left: 2rem;
+        column-gap: 8vw;
+        overflow: hidden;
+      }
+      
+      /* Create two equal columns that sits next to each other */
+      .column-left {
+        margin-top: 1vh;
+        text-align: left;
+        flex: 50%;
+        height: 48vh;
+        width: 30vw;
+        font-family:'Comfortaa', 'Open Sans','Roboto';
+        color:#3a3a3a;
+        font-weight: 300rem;
+      }
 
-.two-cols {
-    display: flex;
-    flex-direction: column;
+      .column-left h2 {
+        text-align: center;
+        color: rgb(4,169,160)
+      }
+
+      .column-right {
+        background: url('../images/happy-baby.jpeg');
+        background-repeat: no-repeat;
+        width: 55vw;
+        height: 40vh;
+        margin-right: 4rem;
+      }
+
+      @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
-@media (min-width: 1000px) {
-    .two-cols {
-        flex-direction: row;
-    }
-    .two-cols > * {
-        flex: 1;
-    }
+.topics {
+    padding-top: .5rem;
+    padding-left: 2.5rem;
+}
