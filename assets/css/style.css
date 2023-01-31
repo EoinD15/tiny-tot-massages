@@ -76,8 +76,6 @@ h1, h2 {
     column-gap: 30px;
     column-rule-style: solid;
     column-rule-width: 1px;
-    column-rule-color: lightblue;
-    column-rule: 1px solid lightblue;
     column-width: 100px;
 }
 
@@ -157,12 +155,6 @@ footer {
 }
 
 
-
-
-
-
-  
-  /* Style inputs */
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -170,10 +162,11 @@ footer {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: 'Comfortaa';
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #A13376;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -181,37 +174,28 @@ footer {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(4,169,160);
   }
   
-  /* Style the container/contact section */
-  .contact-us {
-    border-radius: 3px;
+  #contact-us {
+    text-align: left;
+  }
+
+  .form {
     background-color: #f2f2f2;
     margin-top: 1rem;
     padding-left: 2rem;
     overflow: hidden;
   }
 
-  .contact-us h1, h2 {
+  .form h1, h2 {
     padding-top: 6rem;
     margin-left: 2rem;
   }
   
-  /* Create two columns that float next to eachother */
   .column {
-    background: url('../images/contactus-image.png')
-    float: left;
     width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+    padding: 8px;
   }
 
   @media screen and (max-width: 600px) {
