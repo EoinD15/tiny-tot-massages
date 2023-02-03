@@ -10,6 +10,7 @@ body {
     font-family:'Comfortaa', 'Open Sans','Roboto';
     color:#3a3a3a;
     font-weight: 300rem;
+    font-size: large;
 }
 
 h1, h2 {
@@ -86,6 +87,23 @@ h1, h2 {
     color: rgb(4,169,160);
 }
 
+.benefits-list {
+  text-align: left;
+  color: #3a3a3a;
+}
+
+.benefits-list h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  padding-top: 2rem;
+  color: rgb(4,169,160);
+}
+
+.benefits > li {
+  padding: 1rem;
+}
+
 footer {
     height: 100px;
 }
@@ -110,6 +128,7 @@ footer {
         padding-left: 2rem;
         column-gap: 6vw;
         overflow: hidden;
+        padding-bottom: 4rem;
       }
       
       /* Create two equal columns that sits next to each other */
@@ -206,17 +225,15 @@ footer {
 
 
 .testimonials {
-  padding-top: 4vh;
-  margin-left: 2rem;
-  margin-right: 3.5rem ;
+  padding-top: 4px;
+  margin-right: 3.5rem;
 }
 
 .testimonials h2 {
     text-align: left;
-    padding-top: 1.8rem;
     color: rgb(4,169,160);
     letter-spacing: 0;
-    margin-left: .5rem;
+    margin-left: 1.8rem;
     margin-top: 3rem;
 }
 
@@ -228,6 +245,7 @@ footer {
   border-radius: 5px;
   padding: 16px;
   margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .container::after {
