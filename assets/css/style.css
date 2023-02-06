@@ -87,13 +87,13 @@ h1, h2 {
     margin-left: 2rem;
   }
 .information-section {
-    margin-left: 2rem;
-    column-count: 3;
-    column-gap: 30px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    column-width: 90px;
-    padding-right: 2rem;
+    display: flex;
+    padding: 40px;
+}
+
+.information-section div {
+  flex: 1;
+  margin: 20px;
 }
 
 .information-section h2 {
@@ -126,8 +126,8 @@ footer {
 }
 
 .social-networks i {
-    font-size: 7rem;
-    margin: 3rem;
+    font-size: 2rem;
+    margin: 10px;
     color:#A13376
 }
 
@@ -217,7 +217,7 @@ footer {
 
   .form h1, h2 {
     padding-top: 6rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
   
   .column {
@@ -266,5 +266,9 @@ footer {
 @media (max-width: 500px) {
   .container {
     text-align: center;
+  }
+
+  .information-section {
+    flex-direction: column;
   }
 }
