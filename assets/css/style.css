@@ -28,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 #logo {
@@ -80,6 +81,7 @@ header {
     height: 160px;
     color: #A13376;
     background-color: rgb(255,255,255,67%);
+    padding: 10px;
   }
 
 .image-text p {
