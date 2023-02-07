@@ -4,185 +4,160 @@
     margin: 0;
     padding: 0;
     border: none;
-}
+  }
 
 body {
     font-family:'Comfortaa', 'Open Sans','Roboto';
     color:#3a3a3a;
     font-weight: 300rem;
     font-size: large;
-}
+  }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Comfortaa';
     text-transform: uppercase;
     color: rgb(4,169,160);
+  }
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
-    float: left;
-    font-size: 3rem;
     color: #A13376;
-    font-weight: 6rem;
-    margin-left: 1rem;
-}
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.links {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-}
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-#logo, .links {
-    line-height: 10vh;
-}
-
-.links li {
-    list-style-type: none;
-    float: right;
-    margin-right: 3rem;
-}
-
-.links a {
+  .links a {
     text-decoration: none;
     color: rgb(4,169,160)
-}
+  }
+
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+
 
 .links a:hover {
         border-bottom: 1px solid;
-}
+  }
 
 .active {
     color: rgb(4,169,160);
     border-bottom: solid;
-}
-
-/* welcome image */
+  }
 
 #hero-outer {
-    height: 1vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-}
+  }
 
 #hero-image {
     height: 60vh;
     width: 100vw;
     background: url('../images/background-image.jpg') no-repeat center center;
-}
+  }
 
-  .image-text{
-    height: 8rem;
-    letter-spacing: 0;
-    width: 10vw;
-    text-align: left;
-    text-align: justify;
-    position: absolute;
-    margin-left: 4rem;
-    margin-top: 1rem;
+.image-text {
+    height: 160px;
     color: #A13376;
-    font-size: 1.4rem;
+    background-color: rgb(255,255,255,67%);
   }
 
-  .image-text p{
-    margin-left: 2rem;
+.image-text p {
+    text-transform: uppercase;
   }
+
 .information-section {
     display: flex;
-    padding: 40px;
-}
+    padding-bottom: 20px;
+  }
 
 .information-section div {
-  flex: 1;
-  margin: 20px;
+    flex: 1;
+    margin: 20px;
 }
 
 .information-section h2 {
     font-size: 1.8rem;
     padding-top: 1.5rem;
     color: rgb(4,169,160);
-}
+  }
 
 .benefit-list {
   text-align: left;
   padding-left: 2rem;
   border: 1rem;
-  padding-bottom: 2rem;
-}
-
-.benefit-list h2 {
-  margin-left: 1rem;
-}
+  }
 
 footer {
     height: 50px;
-}
+  }
 
-.social-networks {
+#social-networks {
     text-align: center;
-}
+    padding-top: 2rem;
+  }
 
-.social-networks > li {
+#social-networks > li {
     display: inline
-}
+  }
 
-.social-networks i {
+#social-networks i {
     font-size: 2rem;
     margin: 10px;
     color:#A13376
-}
+  }
 
-    .row {
-        display: flex;
-        float: left;
-        padding-left: 2rem;
-        column-gap: 6vw;
-        overflow: hidden;
-        padding-bottom: 4rem;
-      }
-      
-      /* Create two equal columns that sits next to each other */
-    .column-left {
-        text-align: left;
-        flex: 50%;
-        height: 48vh;
-        width: 40vw;
-        font-family:'Comfortaa', 'Open Sans','Roboto';
-        color:#3a3a3a;
-        font-weight: 30rem;
-      }
+.row {
+    padding-top: 3%;
+    margin-left: 2rem;
+    padding-bottom: 30px;
+  }
 
-    .column-left h2 {
-        text-align: left;
-        padding-top: 1.8rem;
-        color: rgb(4,169,160);
-        letter-spacing: 0;
-        margin-left: .5rem;
-      }
+.column-left {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  }
 
-    .column-right {
-        background: url('../images/happy-baby.jpeg');
-        background-repeat: no-repeat;
-        margin-top: 3vh;
-        width: 40vw;
-        height: 45vh;
-        margin-right: 3rem;
-        border-style: solid;
-        border-color: rgb(4,169,160);
-        border-width: 10px;
-      }
+.massage-image {
+      background-image: url('../images/baby-massage.jpeg');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+  }
+
+.testimonials {
+  margin-left: 2rem;
+  }
 
       @media screen and (max-width: 600px) {
-  .column {
+.column {
     width: 100%;
+    }
   }
-}
 
-.topics {
-    padding-top: .5rem;
-    padding-left: 2.5rem;
-}
 
-  input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -192,7 +167,7 @@ footer {
     font-family: 'Comfortaa';
   }
   
-  input[type=submit] {
+input[type=submit] {
     background-color: #A13376;
     color: white;
     padding: 12px 20px;
@@ -200,24 +175,19 @@ footer {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: rgb(4,169,160);
   }
-  
-  #contact-us {
-    text-align: left;
+
+  #contact-us h2 {
+    padding-left: 2rem;
   }
 
-  .form {
+.form {
     background-color: #f2f2f2;
     margin-top: 1rem;
     padding-left: 2rem;
     overflow: hidden;
-  }
-
-  .form h1, h2 {
-    padding-top: 6rem;
-    /* margin-left: 2rem; */
   }
   
   .column {
@@ -227,48 +197,39 @@ footer {
 
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
-      width: 100%;
+      width: 80%;
+      padding-right: 20px;
       margin-top: 0;
+      text-align: center;
     }
-}
+  }
 
+  .container {
+    padding: 16px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    box-shadow: rgba(161, 51, 118, 0.4) 0px 5px, rgba(161, 51, 118, 0.3) 0px 10px, rgba(161, 51, 118, 0.2) 0px 15px, rgba(161, 51, 118, 0.1) 0px 20px, rgba(161, 51, 118, 0.05) 0px 25px;
+  }
 
-.testimonials {
-  padding-top: 4px;
-  margin-right: 3.5rem;
-}
-
-.testimonials h2 {
-    text-align: left;
-    color: rgb(4,169,160);
-    letter-spacing: 0;
-    margin-left: 2.5rem;
-    margin-top: 3rem;
-}
-
-.container {
-  margin-top: 1rem;
-  font-family: 'Comfortaa';
-  border: 2px solid rgb(4,169,160);
-  background-color: #EEEEEE;
-  border-radius: 5px;
-  padding: 16px;
-  margin-right: 2rem;
-  margin-left: 2rem;
-}
-
-.container::after {
+  .container::after {
   content: "";
   clear: both;
   display: table;
-}
+  }
 
 @media (max-width: 500px) {
   .container {
     text-align: center;
-  }
+    }
 
   .information-section {
     flex-direction: column;
+    }
   }
-}
+
+  @media only screen and (max-width:600px) {
+    header nav {
+      display:flex;
+    }
+  }
+
